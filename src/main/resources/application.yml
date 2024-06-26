@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_security
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true # Set to true to log SQL statements, false to disable logging
+    properties:
+      hibernate:
+        format_sql: true # Use format_sql consistently
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
